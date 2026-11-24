@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Swiss Labour Law · Derecho laboral suizo</title>
+<meta name="description" content="Guía y herramientas sobre derecho laboral suizo · Swiss labour law guide and tools · Schweizer Arbeitsrecht: Leitfaden und Werkzeuge. Nettolohn, CV, Kündigung, AHV, BVG, 3a.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Swiss Labour Law · Derecho laboral suizo · Schweizer Arbeitsrecht">
+<meta property="og:description" content="Guía y herramientas sobre derecho laboral suizo, en español, inglés y alemán.">
+<meta name="theme-color" content="#c8102e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23c8102e'/%3E%3Cpath d='M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
 :root{--bg:#f7f6f3;--card:#fff;--tx:#1d1d1b;--mu:#66655f;--ac:#c8102e;--bd:#e3e1db;--hi:#fdf1f3;--tip:#eef4fb;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -880,7 +886,7 @@ var XT=[
 function xtLoad(){try{var v=JSON.parse(localStorage.getItem("xs1")||"{}");if(v.emp)Object.assign(XS.emp,v.emp);if(v.cmp){XS.cmp.st=v.cmp.st||XS.cmp.st;XS.cmp.kids=v.cmp.kids===undefined?XS.cmp.kids:v.cmp.kids;XS.cmp.age=v.cmp.age||XS.cmp.age;XS.cmp.ch=v.cmp.ch===undefined?XS.cmp.ch:v.cmp.ch;["a","b"].forEach(function(k){if(v.cmp[k])Object.assign(XS.cmp[k],v.cmp[k])})}if(v.ns)Object.assign(NS,v.ns)}catch(e){}}
 function xtSave(){try{localStorage.setItem("xs1",JSON.stringify({emp:XS.emp,cmp:XS.cmp,ns:NS}))}catch(e){}}
 xtLoad();
-function xtRender(){var u=document.getElementById("cards"),p=document.getElementById("p-tools"),i=L==="es"?1:L==="de"?2:0;
+function xtRender(){document.documentElement.lang=L;var u=document.getElementById("cards"),p=document.getElementById("p-tools"),i=L==="es"?1:L==="de"?2:0;
 u.insertAdjacentHTML("beforeend",XT.map(function(x){return "<button class=\"card "+x.c+"\" data-go="+x.id+"><b>"+x.t[i]+"</b><span>"+x.d[i]+"</span></button>"}).join(""));
 var nb=document.getElementById("n27box");if(!nb){nb=document.createElement("div");nb.id="n27box";u.parentNode.insertBefore(nb,u)}nb.innerHTML=n27Html();
 XT.forEach(function(x){var d=document.getElementById(x.id);if(!d){d=document.createElement("details");d.id=x.id;d.className=x.c;d.innerHTML="<summary></summary><div class=in></div>";p.appendChild(d)}d.querySelector("summary").textContent=x.t[i];d.querySelector(".in").innerHTML=x.h()});
